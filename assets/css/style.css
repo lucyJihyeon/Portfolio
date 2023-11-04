@@ -1,13 +1,13 @@
-*   {
-    font-family:'Roboto', Arial, Helvetica;
-}
-
-
-
 :root{
     --text-color: blueviolet;
     --border-color: #dd98a4;
 }
+
+*   {
+    font-family:'Roboto', Arial, Helvetica;
+  
+}
+
 
 header  {
     padding:20px;
@@ -137,6 +137,7 @@ footer h3 {
     font-size: 70%;
 }
 @media screen and (max-width: 768px) {
+    
     main    {
       display:flex;
       flex-shrink: 50%;
