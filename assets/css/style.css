@@ -1,0 +1,129 @@
+*   {
+    font-family:'Roboto', Arial, Helvetica;
+}
+
+
+
+:root{
+    --text-color: blueviolet;
+    --border-color: #dd98a4;
+}
+
+header  {
+    padding:20px;
+    background-image: url("../image/nature-3507.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    color:white;
+}
+
+header h1{
+    text-align: center;
+    margin:0 auto;
+    font-family: 'Agbalumo';
+
+}
+
+nav {
+    overflow: hidden;
+}
+
+header ul  {
+    list-style-type: none;
+    float: right;
+    position: relative;
+}
+
+li   {
+    display:inline-block;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a   {
+    float: right;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0;
+    border-bottom: var(--text-color) double;
+}
+
+nav a:hover {
+    background-color: var(--text-color);
+    color:white;
+}
+
+#project a {
+    border: 3px solid var(--border-color);
+    display:inline-flex;
+    width: 300px;
+    height: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1%;
+    transition: all 0.5s ease-in-out;
+    transition: background-color 0.5s;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: larger;
+}
+
+#project-1  {
+    background-image: url("../image/to-do-list.png");
+    background-size: contain;
+}
+
+#project-2  {
+    background-image: url("../image/blog.png");
+    background-size: contain;
+}
+
+#project-3  {
+    background-image: url("../image/chatting.png");
+    background-size: contain;
+}
+#project-4  {
+    background-image: url("../image/food-delivery.png");
+    background-size: contain;
+}
+#project-5  {
+    background-image: url("../image/social-media.png");
+    background-size: contain;
+}
+
+
+
+#project a:hover    {
+    width:400px;
+    height:350px;
+    border: 5px solid rgb(124, 184, 165);
+}
+
+#contact ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+}
+#contact li {
+    color: var(--text-color);
+    list-style-type: none;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+#contact li a{
+    text-decoration: none;
+}
+
+#contact    {
+    padding:20px;
+    background-image: url("../image/cloud-.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
