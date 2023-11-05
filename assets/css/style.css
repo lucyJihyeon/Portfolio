@@ -1,9 +1,14 @@
+/*
+Universal Selector to set styles in general 
+*/
 *   {
     font-family:'Roboto', Arial, Helvetica;
 }
 
 
-
+/*
+ Set up custom properties 
+*/
 :root{
     --text-color: blueviolet;
     --border-color: #dd98a4;
@@ -11,7 +16,9 @@
 }
 
 
-
+/*
+Element Selector to set up styles for the header 
+*/
 header  {
     padding:20px;
     background-image: url("../image/nature-3507.gif");
@@ -20,7 +27,9 @@ header  {
     background-position: center bottom;
     color:white;
 }
-
+/*
+Element selector to set up style for the h1 element inside of the header
+*/
 header h1{
     text-align: center;
     margin:0 auto;
@@ -28,16 +37,27 @@ header h1{
 
 }
 
+/*
+Element Selector for nav element
+If content overflows an element's box, then hide
+to avoid unwatned horizontal scrolling and extran whitespace
+*/
 nav {
     overflow: hidden;
 }
 
+/*
+Element Selector to set up styles for the ul element inside of the header element
+*/
 header ul  {
     list-style-type: none;
     float: right;
     position: relative;
 }
 
+/*
+Element Selector to set up styles for the li elements
+*/
 li   {
     display:inline-block;
     margin-left: 10px;
@@ -45,6 +65,10 @@ li   {
     text-decoration: none;
 }
 
+/*
+Element Selector to set up styles for the a element
+inside of the nav element.
+*/
 nav a   {
     float: right;
     color: var(--text-color);
@@ -55,15 +79,26 @@ nav a   {
     border-bottom: var(--text-color) double;
 }
 
+/*
+Hover Selector; when the a element inside of the nav element is hovered,
+then the background color and the font color change.
+*/
 nav a:hover {
     background-color: var(--text-color);
     color:white;
 }
 
+/*
+Element Selector to change color of the main element's background
+*/
 main    {
     background-color: var(--bk-color);
 }
 
+/*
+ID Selector to set up styles of the p element inside of the 
+about-me id
+*/
 #about-me  p {
     display: flex;
     flex-direction: column;
@@ -71,6 +106,10 @@ main    {
     line-height: 1.5;
 }
 
+/*
+ID Selector to set up styles for the a element inside of the 
+project id
+*/
 #project a {
     border: 3px solid var(--border-color);
     display:inline-flex;
@@ -85,6 +124,9 @@ main    {
     font-size: larger;
 }
 
+/*
+ID Selector to add a background image for the items inside of the project class.
+*/
 
 #project-1  {
     background-image: url("../image/to-do-list.png");
@@ -111,6 +153,10 @@ main    {
 
 
 
+/*
+Hover Selector; When the a element inside of the project class
+is hovered, then the size, border,and box shadow change.
+*/
 #project a:hover    {
     width:400px;
     height:350px;
@@ -120,22 +166,36 @@ main    {
     #f3a4b0;
 }
 
+/*
+ID Selector to set up styles for the ul element 
+inside of the contact id.
+*/
 #contact ul {
     list-style-type: none;
     display: flex;
     justify-content:center;
 }
+/*
+Id Selector to set up styles for the li element inside of the 
+contact id
+*/
 #contact li {
     color: var(--text-color);
     list-style-type: none;
     justify-content: center;
     margin-left: 40px;
 }
-
+/*
+Id Selector to set up styles for the a element inside of the 
+li element which is inside of the contact id
+*/
 #contact li a{
     text-decoration: none;
 }
-
+/*
+Id Selector to set up styles for the 
+contact id
+*/
 #contact    {
     padding:20px;
     background-image: url("../image/big-cloud.gif");
@@ -144,6 +204,10 @@ main    {
     background-position: center bottom;
 }
 
+/*
+Element Selector to set up styles for the h3 element 
+inside of the footer element
+*/
 footer h3 {
     background-color: rgb(179, 138, 218);
     width:100%;
@@ -153,8 +217,12 @@ footer h3 {
     color: white;
     font-size: 70%;
 }
+
+/*
+apply different styles for different media type(by screen size)
+*/
 @media screen and (max-width: 768px) {
-    
+
     main    {
       display:flex;
       flex-shrink: 50%;
@@ -162,6 +230,10 @@ footer h3 {
       justify-content: center;
       padding:0;
     }
+    /*
+    Change the ul and li elements to force items 
+    to move to the next line if there is not enough space
+    */
     #contact ul, #contact li {
         display:flex;
         flex-wrap: wrap;
