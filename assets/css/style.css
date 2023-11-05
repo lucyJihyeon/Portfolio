@@ -64,6 +64,13 @@ main    {
     background-color: var(--bk-color);
 }
 
+#about-me  p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+}
+
 #project a {
     border: 3px solid var(--border-color);
     display:inline-flex;
