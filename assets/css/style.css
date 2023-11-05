@@ -154,6 +154,7 @@ footer h3 {
     font-size: 70%;
 }
 @media screen and (max-width: 768px) {
+    
     main    {
       display:flex;
       flex-shrink: 50%;
