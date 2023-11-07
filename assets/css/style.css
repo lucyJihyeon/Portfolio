@@ -226,7 +226,6 @@ contact id
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-    width: 90%;
 }
 
 /*
@@ -297,7 +296,10 @@ apply different styles for different media type(by screen size)
     #project > #project-1   {
         flex-shrink: 1;
     }
-    
+    #contact    {
+        width: 90%;
+    }
+
     
 }
 
