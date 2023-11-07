@@ -117,18 +117,30 @@ about-me id
     line-height: 1.5;
 }
 
+/*
+Child Selector to make the first application to be larger than other apps
+*/
 #project > #project-1   {
     width: 612px;
     height: 250px;
     flex: 0 0 600px;
 }
+
+/*
+Id Selector to lay out the application in an inline level flex box 
+*/
 #project    {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
 
 }
+
+/*
+Id Selector to set styles for h1 inside of the project id.
+*/
 #project h1 {
+    /* Make sure the width of the text box is ooccupies the full screen*/
     width:100%;
     text-align: left;
 }
@@ -136,6 +148,7 @@ about-me id
 /*
 ID Selector to set up styles for the a element inside of the 
 project id
+adding a transition 'ease-in-out' in 0.5s 
 */
 #project a {
     border: 3px solid var(--border-color);
@@ -266,6 +279,7 @@ apply different styles for different media type(by screen size)
         padding:0;
         margin-left:0;
     }
+
     #project a {
         display:inline-flex;
         flex-wrap: wrap;
@@ -283,9 +297,7 @@ apply different styles for different media type(by screen size)
         align-items: center;
         text-align: center;
     }
-    /*
-    change the items in section elements to lay out vertically 
-    */
+   
     section     {
         text-align: center;
         width: 300px;
@@ -293,9 +305,15 @@ apply different styles for different media type(by screen size)
     #project h1 {
         text-align: center;
     }
+    /*
+    change the first application's size same as the other application's 
+    */
     #project > #project-1   {
         flex-shrink: 1;
     }
+    /*
+    change the size of the contact id to fit the box to the screen.
+    */
     #contact    {
         width: 90%;
     }
