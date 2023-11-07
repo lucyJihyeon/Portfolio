@@ -34,7 +34,8 @@ header h1{
     text-align: center;
     margin:0 auto;
     font-family: 'Agbalumo';
-
+    text-shadow: 2px 2px var(--text-color);
+    font-size: 30px;
 }
 
 /*
@@ -94,6 +95,16 @@ Element Selector to change color of the main element's background
 main    {
     background-color: var(--bk-color);
 }
+/*
+Elecment Selector to change font style for the h1 element inside of the section
+element. 
+*/
+section h1 {
+    font-family: 'Agbalumo';
+    text-decoration: underline var(--text-color);
+    color: white;
+    text-shadow: 2px 2px var(--text-color);
+}
 
 /*
 ID Selector to set up styles of the p element inside of the 
@@ -104,6 +115,22 @@ about-me id
     flex-direction: column;
     text-align: center;
     line-height: 1.5;
+}
+
+#project > #project-1   {
+    width: 612px;
+    height: 250px;
+    flex: 0 0 600px;
+}
+#project    {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#project h1 {
+    width:100%;
+    text-align: left;
 }
 
 /*
@@ -127,7 +154,6 @@ project id
 /*
 ID Selector to add a background image for the items inside of the project class.
 */
-
 #project-1  {
     background-image: url("../image/to-do-list.png");
     background-size: contain;
@@ -158,8 +184,6 @@ Hover Selector; When the a element inside of the project class
 is hovered, then the size, border,and box shadow change.
 */
 #project a:hover    {
-    width:400px;
-    height:350px;
     border: 5px solid #ffffff;
     box-shadow: inset 0px 0px 10px
     #f2c5cc, 0 0 20px
@@ -189,7 +213,7 @@ contact id
 Id Selector to set up styles for the a element inside of the 
 li element which is inside of the contact id
 */
-#contact li a{
+#contact li a   {
     text-decoration: none;
 }
 /*
@@ -242,7 +266,10 @@ apply different styles for different media type(by screen size)
         padding:0;
         margin-left:0;
     }
-    
+    #project a {
+        display:inline-flex;
+        flex-wrap: wrap;
+    }
 }
 /*
 apply different styles for different media type(by screen size)
@@ -254,14 +281,22 @@ apply different styles for different media type(by screen size)
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     /*
     change the items in section elements to lay out vertically 
     */
     section     {
-        display: flex;
-        flex-direction: column;
+        text-align: center;
+        width: 300px;
+    }
+    #project h1 {
         text-align: center;
     }
+    #project > #project-1   {
+        flex-shrink: 1;
+    }
+    
+    
 }
 
