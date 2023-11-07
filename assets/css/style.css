@@ -244,4 +244,18 @@ apply different styles for different media type(by screen size)
     }
     
 }
+@media screen and (max-width: 425px)    {
+    main    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section     {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
