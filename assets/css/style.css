@@ -244,6 +244,10 @@ apply different styles for different media type(by screen size)
     }
     
 }
+/*
+apply different styles for different media type(by screen size)
+(for secreen size smaller than / equal to 425px)
+*/
 @media screen and (max-width: 425px)    {
     main    {
         display: flex;
@@ -251,7 +255,9 @@ apply different styles for different media type(by screen size)
         justify-content: center;
         align-items: center;
     }
-
+    /*
+    change the items in section elements to lay out vertically 
+    */
     section     {
         display: flex;
         flex-direction: column;
