@@ -155,8 +155,8 @@ project id
 ID Selector to add a background image for the items inside of the project class.
 */
 #project-1  {
-    background-image: url("../image/to-do-list.png");
-    background-size: contain;
+    background-image: url("../image/digital-marketing-meeting.jpg");
+    background-size:cover;
 }
 
 #project-2  {
