@@ -101,10 +101,10 @@ SO THAT I can efficiently analyze and edit groups of related features
 ## Preview
 
 This is the preview of the webpage. 
-![alt Lucy's Portfolio](assets/image/Lucy's%20porfolio.jpg)
+![alt Lucy's Portfolio](assets/image/screenshot.jpg)
 
 ## Link 
 
 View the Webpage.
 
-[]()
+[Lucy's Portfolio](https://lucyjihyeon.github.io/Portfolio/)
